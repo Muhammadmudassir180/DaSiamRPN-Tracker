@@ -1,10 +1,4 @@
-:trophy:News: **We won the VOT-18 real-time challenge**
-
-:trophy:News: **We won the second place in the VOT-18 long-term challenge**
-
 # DaSiamRPN
-
-This repository includes PyTorch code for reproducing the results on VOT2018.
 
 [**Distractor-aware Siamese Networks for Visual Object Tracking**](https://arxiv.org/pdf/1808.06048.pdf)
 
