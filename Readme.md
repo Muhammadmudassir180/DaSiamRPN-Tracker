@@ -38,12 +38,6 @@ In our tracker, we use an AlexNet variant as our backbone, which is end-to-end t
 The pretrained model can be downloaded from google drive: [SiamRPNBIG.model](https://drive.google.com/file/d/1-vNVZxfbIplXHrqMHiJJYWXYWsOIvGsf/view?usp=sharing).
 Then, you should copy the pretrained model file `SiamRPNBIG.model` to the subfolder './code', so that the tracker can find and load the pretrained_model.
 
-## Detailed steps to install the prerequisites
-
-- install pytorch, numpy, opencv following the instructions in the `run_install.sh`. Please do **not** use conda to install.
-- you can alternatively modify `/PATH/TO/CODE/FOLDER/` in `tracker_SiamRPN.m`
-  If the tracker is ready, you will see the tracking results. (EAO: 0.3827)
-
 ## Results
 
 All results can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1HJOvl_irX3KFbtfj88_FVLtukMI1GTCR?usp=sharing).
@@ -70,15 +64,7 @@ A simple test example.
 ```
 cd code
 python demo.py
-```
 
-If you want to test the performance on OTB2015, please using the follwing command.
-
-```
-cd code
-python test_otb.py
-python eval_otb.py OTB2015 "Siam*" 0 1
-```
 
 # License
 
@@ -89,17 +75,21 @@ Licensed under an MIT license.
 If you find **DaSiamRPN** and **SiamRPN** useful in your research, please consider citing:
 
 ```
+
 @inproceedings{Zhu_2018_ECCV,
-  title={Distractor-aware Siamese Networks for Visual Object Tracking},
-  author={Zhu, Zheng and Wang, Qiang and Bo, Li and Wu, Wei and Yan, Junjie and Hu, Weiming},
-  booktitle={European Conference on Computer Vision},
-  year={2018}
+title={Distractor-aware Siamese Networks for Visual Object Tracking},
+author={Zhu, Zheng and Wang, Qiang and Bo, Li and Wu, Wei and Yan, Junjie and Hu, Weiming},
+booktitle={European Conference on Computer Vision},
+year={2018}
 }
 
 @InProceedings{Li_2018_CVPR,
-  title = {High Performance Visual Tracking With Siamese Region Proposal Network},
-  author = {Li, Bo and Yan, Junjie and Wu, Wei and Zhu, Zheng and Hu, Xiaolin},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2018}
+title = {High Performance Visual Tracking With Siamese Region Proposal Network},
+author = {Li, Bo and Yan, Junjie and Wu, Wei and Zhu, Zheng and Hu, Xiaolin},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+year = {2018}
 }
+
+```
+
 ```
